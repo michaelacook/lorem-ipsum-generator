@@ -1,0 +1,11 @@
+/* custom styles */
+
+
+/* Sticky footer */
+html, body {
+    height: 100% !important;
+}
+
+.content {
+    flex: 1 0 auto !important;
+}

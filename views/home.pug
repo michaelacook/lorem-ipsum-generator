@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+    div.container.content
+        div.mt-5.mx-auto
+            h1.text-center.mb-4 Lorem Ipsum Generator
+            p.text-center.mb-3
+                | Lorem Ipsum text is nonsense Latin placeholder text 
+                br
+                |         that comes in handy when you need placeholder for a website, app, or magazine column!
+            form(method='GET', action='/feed')
+                .form-group.col-lg-4.mx-auto.mt-5
+                    input#paragraphs.form-control.form-control-lg(type='text', name='paragraphs', placeholder='Number of paragraphs')
+                    button#btn.btn.btn-primary.btn-lg.btn-block.mt-3 Generate Text

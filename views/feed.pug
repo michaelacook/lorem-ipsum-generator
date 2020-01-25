@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+
+  .container.content
+    .mx-auto
+      h1.text-center.mt-5.mb-5 Lorem Ipsum Generator
+      .col-lg-10.mx-auto.mt-4
+        each paragraph in lorem 
+          p #{paragraph}
