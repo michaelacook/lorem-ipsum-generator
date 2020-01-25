@@ -5,8 +5,8 @@ const router = express.Router();
 
 
 // Instantiate controllers 
-const homeController = new (require('../src/classes/controllers/HomeController.js'))();
-const feedController = new (require('../src/classes/controllers/FeedController.js'))();
+const homeController = new (require('../src/controllers/HomeController.js'))();
+const feedController = new (require('../src/controllers/FeedController.js'))();
 
 
 
