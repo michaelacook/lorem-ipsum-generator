@@ -8,7 +8,7 @@ class TextGenerator
 
     constructor()
     {
-        this.sentences = require('../../data/sentences.js');
+        this.sentences = require('../data/sentences.js');
     }
 
 
