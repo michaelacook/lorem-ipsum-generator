@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "10.15.2"
+  },
   "author": "Michael A. Cook",
   "license": "MIT",
   "dependencies": {
