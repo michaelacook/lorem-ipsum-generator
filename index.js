@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 8000;
 
 
 // set template engine
@@ -23,7 +24,7 @@ app.use('/', routes);
 
 
 // run http server
-app.listen(8000, runConsoleMsg(8000, 500));
+app.listen(port, runConsoleMsg(8000, 500));
 
 
 
