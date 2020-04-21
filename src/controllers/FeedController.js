@@ -18,6 +18,9 @@ class FeedController
     {
         const textGenerator = new TextGenerator();
         const paragraphs = request.query.paragraphs;
+        if (paragraphs > 1000) {
+            return response.redirect('/?error=exceeds_limit');
+        }
         const lorem = textGenerator.generatePlaceholder(paragraphs);
         const args = { year: new Date().getYear() + 1900, lorem };
 

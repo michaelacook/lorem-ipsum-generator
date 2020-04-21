@@ -2,6 +2,7 @@
  * Render home page
  */
 
+const errorMessages = require('../../client_messages/error_messages.js');
 
 
 class HomeController 
@@ -13,8 +14,13 @@ class HomeController
      */
     render(request, response)
     {
+        const args = new Object();
+        if (request.query.error) {
+            args.error = errorMessages[request.query.error];
+        }
         const year = new Date().getYear() + 1900;
-        response.render('home', { year });
+        args.year = year;
+        response.render('home', args);
     }
 }
 

@@ -2,6 +2,10 @@ extends layout.pug
 
 block content
     div.container.content
+        if error 
+            .col-8.mt-4.mx-auto
+              .alert.alert-danger.d-flex.justify-content-between= error
+                  span.close-alert &times;
         div.mt-5.mx-auto
             h1.text-center.mb-4 Lorem Ipsum Generator
             p.text-center.mb-3
